@@ -50,7 +50,7 @@ class RRDB(nn.Module):
         self.rdb3 = ResidualDenseBlock(num_feat, num_grow_ch)
 
     def forward(self, x):
-        with torch.cuda.amp.autocast(True):
+        with torch.cuda.amp.autocast(False):
             out = self.rdb1(x)
             out = self.rdb2(out)
             out = self.rdb3(out)

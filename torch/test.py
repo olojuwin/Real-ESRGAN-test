@@ -83,8 +83,10 @@ class RealESRNet(object):
 SR_net = RealESRNet()
 im_lr = cv2.imread("img/test_1.jpg")
 img_sr = SR_net.process(im_lr)
+torch.cuda.synchronize()
 start_t = time.time()
-# for i in range(20):
-#     img_sr = SR_net.process(im_lr)
+for i in range(20):
+    img_sr = SR_net.process(im_lr)
+torch.cuda.synchronize()
 print((time.time()-start_t)/20)
 cv2.imwrite("4_sr.jpg", img_sr)

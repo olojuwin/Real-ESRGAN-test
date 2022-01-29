@@ -1,4 +1,0 @@
-Log file created at: 2022/01/29 04:03:43
-Running on machine: 3b2ab1d574b6
-Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
-F0129 04:03:43.003520 13917 cuda_allocator.cpp:284] Check failed: cudaDeviceReset() : driver shutting down (4) 

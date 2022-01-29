@@ -1,4 +1,0 @@
-Log file created at: 2022/01/29 04:04:38
-Running on machine: 3b2ab1d574b6
-Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
-W0129 04:04:38.140373 14433 tensor.h:421] You shouldn't call `.data` for a LocalTensor.
